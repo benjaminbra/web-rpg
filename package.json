@@ -1,0 +1,8 @@
+{
+  "name": "rpg-web",
+  "version": "0.0.1",
+  "description": "my first rpg with socket.io",
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}
