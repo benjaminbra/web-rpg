@@ -19,4 +19,9 @@ io.on('connection', function(socket){
         var mapJson = fs.readFileSync(file,'utf-8');
         socket.emit('map construct',mapJson);
     });
+
+    socket.on('map ready', function(){
+        var file = './gamebase/players/default.hero';
+        var userJson = fs.readFileSync(file, 'utf-8');
+    });
 });

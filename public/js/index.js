@@ -7,5 +7,8 @@ $(document).ready(function(){
 io.on('map construct',function(mapjson){
     var parsed = $.parseJSON(mapjson);
     console.log(parsed);
-    jsonInterpreter(parsed);
+    var mapGenerated = jsonInterpreter(parsed);
+    if(mapGenerated){
+        io.emit('map ready');
+    }
 });

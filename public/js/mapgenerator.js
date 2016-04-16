@@ -1,6 +1,7 @@
 function jsonInterpreter(json){
     var name = json.name;
-    generator(json.map,json.size);
+    $('#map-name').html('').append(name);
+    return generator(json.map,json.size);
 }
 
 function generator(map,size){
@@ -8,6 +9,7 @@ function generator(map,size){
     map.req.forEach(function(e,i,a){
         conditionInterpreter(map,e,size);
     });
+    return true;
 }
 
 function conditionInterpreter(map,e,size){

@@ -1,4 +1,40 @@
-table { border-collapse:collapse }
+body{
+    margin: 0;
+    background: black;
+}
+
+table{
+    border-collapse:collapse;
+}
+
+#interface{
+    margin: 0;
+    width: 1312px;
+}
+
+#menu{
+    width: 220px;
+    height: 572px;
+    border: 2px double #9F9F9F;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    background: blue;
+    display: inline-block;
+}
+
+#menu #map-name{
+    margin: 0 5px;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 1px black,
+                0px 1px 1px black;
+}
+
+#map{
+    width: 1088px;
+    display: inline-block;
+}
 
 #map td{
     height: 64px;
@@ -35,4 +71,10 @@ table { border-collapse:collapse }
 
 .t-bottom-tree{
     background: url('../sprites/map/sprite-map1.png') 0px -64px;
+}
+
+.hero{
+    background-color: blue;
+    height: 64px;
+    width: 64px;
 }
