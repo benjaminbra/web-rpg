@@ -1,0 +1,46 @@
+{
+  "name" : "NoobLand (Entrée)",
+  "size" : {
+    "height" : 8,
+    "width" : 16
+  },
+  "map" : {
+    "req" : [
+      {
+        "condition" : "!*-*?[0-5,1-5];",
+        "execution" : {
+          "layer1" : {
+            "type" : "grass",
+            "collision" : "none"
+          },
+          "layer2" : {
+            "type" : "grass",
+            "collision" : "none"
+          }
+        }
+      }
+    ],
+    "exception" : {
+      "0-5" : {
+        "layer1" : {
+          "type" : "grass",
+          "collision" : "none"
+        },
+        "layer2" : {
+          "type" : "top-tree",
+          "collision" : "under"
+        }
+      },
+      "1-5" : {
+        "layer1" : {
+          "type" : "dirt",
+          "collision" : "none"
+        },
+        "layer2" : {
+          "type" : "bottom-tree",
+          "collision" : "under"
+        }
+      }
+    }
+  }
+}

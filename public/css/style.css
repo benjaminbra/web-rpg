@@ -1,0 +1,38 @@
+table { border-collapse:collapse }
+
+#map td{
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+    background: black;
+    padding: 0;
+    margin: 0;
+}
+
+#map td div{
+    height: 64px;
+    width: 64px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#map td div.layer2{
+    top: -64px;
+}
+
+.t-grass{
+    background: url('../sprites/map/sprite-map1.png');
+}
+
+.t-dirt{
+    background: url('../sprites/map/sprite-map1.png') -64px 0px;
+}
+
+.t-top-tree{
+    background: url('../sprites/map/sprite-map1.png') -64px -64px;
+}
+
+.t-bottom-tree{
+    background: url('../sprites/map/sprite-map1.png') 0px -64px;
+}

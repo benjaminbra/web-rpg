@@ -1,0 +1,12 @@
+{
+  "name" : "John Doe",
+  "exp" : 0,
+  "stats" : {
+    "strength" : 0,
+    "magic" : 0,
+    "resistance" : 0
+  },
+  "equipment" : {
+    "helmet" : null
+  }
+}
